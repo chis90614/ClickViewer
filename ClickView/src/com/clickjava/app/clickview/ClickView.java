@@ -4,6 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
+//Fixing Version
 public class ClickView extends JFrame {
   JPanel contentPane;
   BorderLayout borderLayout1 = new BorderLayout();
@@ -15,7 +16,7 @@ public class ClickView extends JFrame {
   BorderLayout borderLayout2 = new BorderLayout();
   JPanel jPanel2 = new JPanel();
 
-  // ¸ğµâ »ı¼º¹× ¹èÄ¡
+  // ëª¨ë“ˆ ìƒì„±ë° ë°°ì¹˜
   DirectoryChangeObservable observable = new DirectoryChangeObservable();
   DirectoryTree directoryTree = new DirectoryTree(observable);
   ImageView imageView = new ImageView();
@@ -39,7 +40,7 @@ public class ClickView extends JFrame {
     contentPane = (JPanel)this.getContentPane();
     contentPane.setLayout(borderLayout1);
     this.setSize(new Dimension(800, 600));
-    this.setTitle("Å¬¸¯ ºä¾î");
+    this.setTitle("í´ë¦­ ë·°ì–´");
     jSplitPane2.setOrientation(JSplitPane.VERTICAL_SPLIT);
     jSplitPane2.setDividerSize(2);
     jPanel1.setLayout(borderLayout2);
@@ -57,7 +58,7 @@ public class ClickView extends JFrame {
     jSplitPane1.setDividerLocation(300);
     jSplitPane2.setDividerLocation(300);
 
-    // ¸ğµâ¹èÄ¡
+    // ëª¨ë“ˆë°°ì¹˜
     observable.addObserver(directoryTree);
     jScrollPane1.getViewport().add(directoryTree);
 
